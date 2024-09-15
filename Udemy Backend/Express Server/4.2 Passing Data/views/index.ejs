@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Name Letters</title>
+</head>
+
+<body>
+  <!-- Write your code here -->
+  <% if(locals.obj){ %>
+      <h1>Hello <%= obj.name%></h1>
+      <p><%= obj.str %></p>
+  <% }else{ %>
+    <H1>ENter name</H1>
+    <% } %>
+    <form action="/submit" method="POST">
+     <input type="text" name="fName" placeholder="First name">
+     <input type="text" name="lName" placeholder="Last name">
+     <input type="password" name="pwd" placeholder="Password">
+     <input type="submit" value="OK">
+    </form>
+  
+</body>
+
+</html>
